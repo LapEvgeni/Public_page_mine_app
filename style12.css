@@ -1,0 +1,141 @@
+html{
+	background-color:#36BBCE ;
+	
+}
+
+
+
+body{
+	height:100%; 
+	min-width: 300px;
+	
+
+
+}
+main{min-width: 300px;}
+nav ul{
+	list-style: none;
+
+}
+nav ul{
+	display: flex;
+	flex:left;
+}
+h2{
+
+	text-align: center;
+	margin:150px auto;
+	margin-top: 50px;
+	margin-bottom: 200px;
+	
+	
+	width: 100%;
+	font-size: 70px;
+}
+
+.asE{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    height: 600px;
+    width: 100%;
+    
+}
+.buttons{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.text-field{
+	margin-bottom: 1rem;
+}
+.text-field__label{
+	text-align: center;
+	margin-top: 20px;
+	display: block;
+	margin-bottom: 0.25rem;
+	
+	font-size: 2.5rem;
+}
+.text-field__input{
+	display: block;
+	width: 85%;
+
+	
+	height: 50px;
+	padding: 1.75rem 1.75rem;
+
+	margin-top: 10px;
+	margin-bottom: 70px;
+	font-family: inherit;
+	font-size: 2.5rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color:black;
+	background-color: #5FC0CE;
+	background-clip: padding-box;
+	border:1px solid #015965;
+	border-radius: 1.7rem;
+	outline: none;
+	transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
+[type='date']{
+	color: black;
+}
+[type='date']::-webkit-inner-spin-button{
+	display: none;
+}
+[type='date']::-webkit-calendar-picker-indicator{
+	display: none;
+}
+/* Для современных браузеров */
+::placeholder { color: #999; }
+input[type=date]:invalid::-webkit-datetime-edit {
+    color: #999;
+}
+.asE button{
+	display: block;
+	height: 100px;
+	width: 100%;
+	margin:0 auto;
+	margin-bottom: 50px;
+	font-size: 3rem;
+	background-color: yellow;
+	border-color: lightgreen;
+	border: 0px solid;
+	border-radius:105px;
+}
+.buttons button{
+	display: block;
+	height: 50px;
+	width: 30vw;
+	margin:0 5px;
+	background-color: yellow;
+	border-color: lightgreen;
+	border: 0px solid;
+}
+#bd1{
+	display: none;
+	margin: 0 auto;
+	text-align: center;
+
+}
+#bd2{
+	display: block;
+	margin: 0 auto;
+	align-items: center;
+	text-align: center;
+}
+#bd3{
+	display: none;
+	margin: 0 auto;
+	align-items: center;
+	text-align: center;
+}
+.bober{
+	margin-top: 40px;
+}
