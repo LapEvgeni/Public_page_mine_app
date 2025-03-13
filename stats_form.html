@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<script src='{% static "main.js" %}'></script>
+
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>LapSpace</title>
+		<link rel="stylesheet" href="{% static 'css/style12.css' %}"/>
+		
+		
+	</head>
+	
+	<body>
+		
+		<header>
+			<div class="buttons">
+				<form onclick='dohod_stat()'>
+				<button type="button">Доходы</button>
+				</form>
+				
+				<form onclick='common_stat()'>
+				<button >Общее</button>
+				</form>
+
+				<form onclick='rashod_stat()'>
+				<button type="button">Расходы</button>
+				</form>
+				
+				
+
+				</div>
+		</header>
+		<main>
+				
+		<div id='bd1'><div class="bober">Левый экран</div></div>
+		<div id='bd2'><div class="bober">Центральный экран</div></div>
+		<div id='bd3'><div class="bober">Правый экран</div></div>
+
+				
+		
+		</main>
+		</footer>
+	</body>
+	<script >
+		window.onload=function common_stat(){
+		let tg = window.Telegram.WebApp;
+  		let initData = tg.initDataUnsafe;
+		let bd1 = document.getElementById('bd1');
+		let bd2 = document.getElementById('bd2');
+  		let bd3 = document.getElementById('bd3');
+  	
+  		bd1.style.display = 'none';
+  		bd2.style.display = 'block';
+  		bd3.style.display = 'none';
+  		
+  		document.querySelector("#bd2 .bober").innerHTML =tg.initDataUnsafe.user;
+
+
+  		
+  		
+  	//let tg = window.Telegram.WebApp;
+	//let user = tg.WabAppUser.id;
+	
+}
+	</script>
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</html>
