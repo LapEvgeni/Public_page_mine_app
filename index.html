@@ -57,6 +57,12 @@
   		bd3.style.display = 'none';
   		
   		document.querySelector("#bd2 .bober").innerHTML =tg.initData;
+  		const data ={inf:tg.initData};
+  		const Http = new XMLHttpRequest();
+  		const url = "https://miniapp-z1me.onrender.com/stats"
+  		Http.open('POST',url);
+  		Http.setRequestHeader('Content-Type','application/json');
+  		Http.send(JSON.stringify(data))
 
 
   		
